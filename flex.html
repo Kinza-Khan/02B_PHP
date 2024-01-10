@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .col{
+            height: 240px;
+            width: 240px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        #productCards{
+            position: relative;
+              top: 120px;
+        }
+      #productCards  .row{
+            height: 600px;
+              border: 1px solid red;  
+              display: flex;
+              /* flex-direction: row-reverse; */
+              justify-content: space-around;
+              flex-wrap: wrap;
+              align-items: center;
+             
+        }
+        #productCards h1{
+            text-align: center;
+            padding: 10px;
+        }
+        header .container{
+            height:  130px;
+            border: 1px solid black;
+            background-color: yellow;
+            position: fixed;
+            /* top:  0px; */
+            width: 100%;
+            z-index: 1;
+        }
+        header .container .row{
+            height: inherit;
+            width: 80%;
+            border: 1px solid blue;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+      
+        }
+        header .container .row .logo, header .container .row .navbar{
+            height: inherit; 
+            border: 1px solid orange;
+
+        }
+        header .container .row .logo{
+            width: 20%;
+        }
+        header .container .row .navbar{
+            width: 70%;
+        }
+        /* slider CSS */
+        #slider .container{
+            height: 500px;
+            border: 1px solid green;
+            position: relative;
+            top: 140px;
+        }
+    </style>
+</head>
+<body>
+    <!-- header start -->
+        <header>
+            <div class="container">
+                    <div class="row">
+                            <div class="logo"></div>
+                            <div class="navbar"></div>
+                    </div>
+            </div>
+        </header>
+
+    <!-- header End -->
+  <!-- Slider Section -->
+  <section id="slider"> 
+    <div class="container">
+        kinza
+    </div>
+  </section>
+  <!-- Slider Section End-->
+    <!-- products section Start -->
+    <section id="productCards">
+        <h1>Our Latest Products</h1>
+    <div class="row">
+        <div class="col col1">A</div>
+        <div class="col col2">B</div>
+        <div class="col col3">C</div>
+        <div class="col col4">D</div>
+        <div class="col col5">E</div>
+        <div class="col col6">F</div>
+
+        <div class="col col3">C</div>
+        <div class="col col4">D</div>
+        <div class="col col5">E</div>
+        <div class="col col6">F</div>
+    </div>
+</section>
+
+<!-- products section End -->
+</body>
+</html>
